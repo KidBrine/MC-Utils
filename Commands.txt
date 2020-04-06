@@ -1,0 +1,8 @@
+* Kill floating ghost block entities from mo creatures
+	/minecraft:kill @e[type=mocreatures:trock]
+
+* Item Cleanup
+	/minecraft:kill @e[type=item]
+	
+* XP orb Cleanup
+	/minecraft:kill @e[type=minecraft:xp_orb]
