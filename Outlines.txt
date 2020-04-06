@@ -1,0 +1,37 @@
+*Shops/Money*
+	* Create shop where you arer standing
+		/vshop create [ENTITY] [NAME]
+		ex: /vshop create minecraft:villager Tony
+
+	* Remove villager shop you are looking at
+		/vshop delete
+
+	* Add held item to shop
+		/vshop add [BUY PRICE (+Num)] [SELL PRICE(+Num)]
+		ex: *while holding item* /vshop add 420 69
+		
+	* Add/remove money from player without affecting your balance
+		/adminpay [PLAYER (Name)] [AMOUNT (+/-Num)]
+		ex: /adminpay Ryzen93900X -69420
+	
+
+*Permissions* (Google permission nodes if you want to change them)
+	* Set permission for Group
+		/lp group [GROUP (Name)] permission set [NODE (Permission Node)] [true/false]
+		ex: /lp group default permission set vshop.edit.admin false
+		DO NOT SET * TO FALSE EVER!
+		
+	* Set permission for player
+		/lp user [PLAYER (Name)] permission set [NODE (Permission Node)] [true/false]
+		ex: /lp user Ryzen93900X permission set vshop.edit.admin true
+		DO NOT SET * TO FALSE EVER!
+		
+	* Unset permission for Group
+		/lp group [GROUP (Name)] permission unset [NODE (Permission Node)] [true/false]
+		ex: /lp group default permission unset *
+		DO NOT SET * TO FALSE EVER!
+		
+	* Unset permission for player
+		/lp user [PLAYER (Name)] permission unset [NODE (Permission Node)] [true/false]
+		ex: /lp user Ryzen93900X permission unset *
+		DO NOT SET * TO FALSE EVER!
